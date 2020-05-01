@@ -1,29 +1,38 @@
-<div class="wrapper-sidebar">
-  <header class="sidebar clearfix">
-    <div class="site-info">
-      {% if site.avatar %}
-        <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-      {% endif %} 
-      <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-      <p class="site-description">{{ site.description }}</p>
-    </div>
-  </header>
+<nav class="nav">
+    <div class="container">
+        <div class="nav-left">
+            <a class="nav-item" href="{{ '' | relative_url }}/">
+                <span class="icon">
+                    <i class="fa fa-home"></i>
+                </span>
+            </a>
+        </div>
 
-  <div class="navlist">
-    <nav>
-      {% for nav in site.navigation %}
-      {% if nav.url contains 'http://' or nav.url contains 'https://' %}
-      <a href="{{ nav.url }}">{{ nav.name }}</a>
-      {% else %}
-      <a href="{{ site.baseurl }}{{ nav.url }}">{{ nav.name }}</a>
-      {% endif %}
-      {% endfor %}
-    </nav>
-  </div>
+        <div class="nav-center">
+            <a class="nav-item" target="_blank" href="https://www.github.com/{{site.github.username}}/">
+                <span class="icon">
+                    <i class="fa fa-github"></i>
+                </span>
+            </a>
+            <a class="nav-item" target="_blank" href="https://www.twitter.com/{{site.twitter.username}}/">
+                <span class="icon">
+                    <i class="fa fa-twitter"></i>
+                </span>
+            </a>
+        </div>
 
-  <div class="wrapper-footer-desktop">
-    <footer class="footer">
-      {% include footer.html %}
-    </footer>
-  </div>
-</div>
+        <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+        </span>
+
+        <div class="nav-right nav-menu">
+            {% for item in site.data.nav.items %}
+            <a class="nav-item" href="{{ item.link | relative_url }}">
+                <span>{{item.name}}</span>
+            </a>
+            {% endfor %}
+        </div>
+
+</nav>

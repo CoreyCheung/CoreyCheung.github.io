@@ -2,45 +2,20 @@
 layout: default
 ---
 
-<article class="posts">
-  <h1>{{ page.title }}</h1>
+<section class="section">
+    <div class="container">
+        <div class="heading has-text-centered">
+            <p class="title is-3">{{page.title}}</p>
+            <p class="subtitle is-6"><span class="tag is-white"><small>{{ page.date | date: '%B %d, %Y'}}</small></span></p>
+        </div>
+        <br>
+        <div class="columns is-multiline">
 
-  <div clsss="meta">
-    <span class="date">
-      {{ page.date | date: "%Y-%m-%d" }}
-    </span>
-
-    <ul class="tag">
-      {% for tag in page.tags %}
-      <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
-          {{ tag }}
-        </a>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
-
-  <div class="entry">
-    {{ content }}
-  </div>
-
-  {% include disqus.html %}
-</article>
-
-<div class="pagination">
-  {% if page.previous.url %}
-    <span class="prev" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.previous.url }}">
-        ← 上一篇
-      </a>
-    </span>
-  {% endif %}
-  {% if page.next.url %}
-    <span class="next" >
-      <a href="{{ site.url }}{{ site.baseurl }}{{ page.next.url }}">
-        下一篇 →
-      </a>
-    </span>
-  {% endif %}
-</div>
+            <div class="column is-half is-offset-one-quarter">
+                <div class="content">
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
