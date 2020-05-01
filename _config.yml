@@ -578,14 +578,14 @@ jekyll-theme-WuK: # 我的主题的自定义样式都在这个命名空间
           var alipay = "";
           var paypal = "";
           var myname = "wwww";
-          var profile = "https://gravatar.loli.net/avatar/289efba375d63424de3c49569c446744?s=320";
+          var profile = "";
           var multilingual = true;
           var myname_hans = "张兴";
           var myname_hant = "张兴";
           var myname_eng = "CoreyCheung";
           var title = "选择你的支付方式";
           var subtitle = "跟随进一步的指示以向" + myname + "付款";
-          var qrcodeapi = "https://www.zhihu.com/qrcode?url=";
+          var qrcodeapi = "";
         </script>
       - |
         <meta
