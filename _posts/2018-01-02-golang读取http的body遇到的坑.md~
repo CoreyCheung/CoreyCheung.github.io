@@ -1,5 +1,4 @@
 当服务端对http的body进行解析到map[string]interface{}时，会出现cli传递的是int类型，而服务端只能断言成float64，而不能将接收到的本该是int类型的直接断言为int
-
 ## cli
 ```go
 func main(){
