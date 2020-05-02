@@ -1,16 +1,16 @@
 # Site settings
-name: name
-email: email
+name: corey
+email: "nicholouszhang@163.com"
 url: url
 description: "A blog and a portfolio"
-author: "author"
-title: "BlogFolio"
+author: "CoreyCheung"
+title: "CoreyCheung's blog"
 permalink: pretty
 baseurl: /CoreyCheung.github.io
 
 # social
 github:
-  username: username
+  username: CoreyCheung
 
 twitter:
-  username: username
+  username: CoreyCheung

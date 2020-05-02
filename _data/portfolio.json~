@@ -1,12 +1,12 @@
 {
     "items": [{
-        "name": "CoreyCheung",
+        "name": "Project One",
         "link": "",
         "image": "http://via.placeholder.com/480x320",
         "date_added": "2017-06-09",
         "description": "This is a description<br><small><em>attribute - attribute link</em></small>",
         "technologies": [
-            "Golang", "Python","JavaScript", "solidity"
+            "Java", "Spring Framework", "Postgres", "JavaScript", "AngularJS"
         ]
     }]
 }
