@@ -31,6 +31,6 @@ body {
 }
 
 .hero.is-primary {
-  background-color: #698CFF;
+  background-color: #FF8C69;
   color: white;
 }
