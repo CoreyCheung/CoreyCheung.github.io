@@ -1,16 +1,16 @@
 # Site settings
-name: corey
-email: "nicholouszhang@163.com"
-url: url
-description: "A blog and a portfolio"
-author: "CoreyCheung"
-title: "CoreyCheung's blog"
-permalink: pretty
-baseurl: /CoreyCheung.github.io
+#name: corey
+#email: "nicholouszhang@163.com"
+#url: url
+#description: "A blog and a portfolio"
+#author: "CoreyCheung"
+#title: "CoreyCheung's blog"
+#permalink: pretty
+#baseurl: /CoreyCheung.github.io
 
 # social
-github:
-  username: CoreyCheung
-
-twitter:
-  username: CoreyCheungX
+#github:
+#  username: CoreyCheung
+#
+#twitter:
+#  username: CoreyCheungX
